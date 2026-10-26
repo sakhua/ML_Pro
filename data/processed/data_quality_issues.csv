@@ -1,0 +1,12 @@
+Vấn đề,Số lượng,Tổng,Tỷ lệ (%),Ghi chú
+Thuốc thiếu SMILES (toàn bảng),5117,17430,29.36,"chủ yếu thuốc sinh học (protein, kháng thể)"
+Thuốc sinh học (biotech),4264,17430,24.46,không có cấu trúc phân tử nhỏ
+Trùng mã drugbank_id,0,17430,0.0,
+Bản ghi tương tác trùng (A–B và B–A),1427655,2855848,49.99,mỗi tương tác ghi ở cả 2 thuốc
+Cặp tham chiếu thuốc không có trong bảng thuốc,538,1428193,0.04,mã thuốc không được xuất trong XML
+Cặp tự tương tác (A–A),0,1428193,0.0,
+Thuốc phân tử nhỏ đã duyệt nhưng thiếu SMILES,157,2802,5.6,không tạo được fingerprint
+SMILES không hợp lệ (RDKit không đọc được),2,2802,0.07,
+"SMILES nhiều thành phần (muối, hỗn hợp)",246,2802,8.78,"vd. ion đối Na+, Cl-, nước kết tinh"
+Thành phần chính quá nhỏ (≤ 2 nguyên tử nặng),84,2802,3.0,"ion/vô cơ: Na, K, Fe, NaCl... fingerprint không mang thông tin"
+"Trùng cấu trúc sau chuẩn hóa (khác mã, cùng phân tử)",87,2802,3.1,129 mã thuộc 42 cấu trúc

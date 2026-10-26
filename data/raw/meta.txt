@@ -1,0 +1,5 @@
+version=5.1
+exported_on=2025-01-02
+drugs=17430
+interaction_entries=2855848
+unique_pairs=1428193
