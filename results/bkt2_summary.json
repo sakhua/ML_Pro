@@ -1,0 +1,485 @@
+{
+ "cv": {
+  "Dummy": {
+   "roc_auc": [
+    0.5,
+    0.0
+   ],
+   "f1": [
+    0.0,
+    0.0
+   ],
+   "recall": [
+    0.0,
+    0.0
+   ],
+   "precision": [
+    0.0,
+    0.0
+   ],
+   "accuracy": [
+    0.5,
+    0.0
+   ],
+   "train_roc_auc": 0.5,
+   "train_f1": 0.0,
+   "fit_time": 0.04564933776855466
+  },
+  "Logistic Regression": {
+   "roc_auc": [
+    0.8066688171875,
+    0.002614227680990385
+   ],
+   "f1": [
+    0.7386028420480122,
+    0.002488973357161684
+   ],
+   "recall": [
+    0.7562,
+    0.002784555619843121
+   ],
+   "precision": [
+    0.721809169836005,
+    0.002659520149776182
+   ],
+   "accuracy": [
+    0.732375,
+    0.0025899444974748055
+   ],
+   "train_roc_auc": 0.8365154016601561,
+   "train_f1": 0.7639092164679175,
+   "fit_time": 22.862794828414916
+  },
+  "Random Forest": {
+   "roc_auc": [
+    0.8582313453125,
+    0.002242553234034952
+   ],
+   "f1": [
+    0.7834316876413863,
+    0.0028177578738758967
+   ],
+   "recall": [
+    0.809075,
+    0.004853864439804679
+   ],
+   "precision": [
+    0.7593769283398425,
+    0.0022069383808723856
+   ],
+   "accuracy": [
+    0.7763500000000001,
+    0.0025481611016574045
+   ],
+   "train_roc_auc": 0.9999998369140626,
+   "train_f1": 0.9998343760252769,
+   "fit_time": 75.62763557434081
+  },
+  "XGBoost": {
+   "roc_auc": [
+    0.8470236234374999,
+    0.001730745610452519
+   ],
+   "f1": [
+    0.7725537847678675,
+    0.0014936231660080727
+   ],
+   "recall": [
+    0.799325,
+    0.003248653567249011
+   ],
+   "precision": [
+    0.7475274339597227,
+    0.0016461306601043483
+   ],
+   "accuracy": [
+    0.764675,
+    0.0013195643220396838
+   ],
+   "train_roc_auc": 0.9276501222656248,
+   "train_f1": 0.8511758083126114,
+   "fit_time": 45.426327276229856
+  }
+ },
+ "svm_fold1": {
+  "roc_auc": 0.80411375,
+  "f1": 0.7376713976425306,
+  "recall": 0.766625,
+  "precision": 0.7108252202132591,
+  "accuracy": 0.727375,
+  "train_roc_auc": 0.96857894,
+  "fit_time": 462.896897315979,
+  "n_support": 16739
+ },
+ "fold1": {
+  "Dummy": {
+   "roc_auc": 0.5,
+   "f1": 0.0,
+   "recall": 0.0,
+   "precision": 0.0,
+   "accuracy": 0.5,
+   "train_roc_auc": 0.5,
+   "fit_time": 0.048555
+  },
+  "Logistic Regression": {
+   "roc_auc": 0.807028,
+   "f1": 0.737196,
+   "recall": 0.75475,
+   "precision": 0.720439,
+   "accuracy": 0.730938,
+   "train_roc_auc": 0.836551,
+   "fit_time": 23.809388
+  },
+  "Random Forest": {
+   "roc_auc": 0.860131,
+   "f1": 0.78539,
+   "recall": 0.810375,
+   "precision": 0.761899,
+   "accuracy": 0.778562,
+   "train_roc_auc": 1.0,
+   "fit_time": 86.325574
+  },
+  "XGBoost": {
+   "roc_auc": 0.847571,
+   "f1": 0.772752,
+   "recall": 0.79975,
+   "precision": 0.747517,
+   "accuracy": 0.764812,
+   "train_roc_auc": 0.928227,
+   "fit_time": 45.083972
+  },
+  "SVM (RBF, 20.000 mẫu)": {
+   "roc_auc": 0.804114,
+   "f1": 0.737671,
+   "recall": 0.766625,
+   "precision": 0.710825,
+   "accuracy": 0.727375,
+   "train_roc_auc": 0.968579,
+   "fit_time": 462.896897
+  }
+ },
+ "test": {
+  "Dummy": {
+   "roc_auc": 0.5,
+   "f1": 0.666667,
+   "recall": 1.0,
+   "precision": 0.5,
+   "accuracy": 0.5,
+   "fit_time": 0.016374
+  },
+  "Logistic Regression": {
+   "roc_auc": 0.812359,
+   "f1": 0.74351,
+   "recall": 0.7647,
+   "precision": 0.723463,
+   "accuracy": 0.7362,
+   "fit_time": 30.546149
+  },
+  "Random Forest": {
+   "roc_auc": 0.864647,
+   "f1": 0.789229,
+   "recall": 0.8221,
+   "precision": 0.758885,
+   "accuracy": 0.78045,
+   "fit_time": 115.1438
+  },
+  "XGBoost": {
+   "roc_auc": 0.852522,
+   "f1": 0.779322,
+   "recall": 0.8103,
+   "precision": 0.750625,
+   "accuracy": 0.77055,
+   "fit_time": 46.418367
+  }
+ },
+ "confusion": {
+  "Logistic Regression": [
+   [
+    7077,
+    2923
+   ],
+   [
+    2353,
+    7647
+   ]
+  ],
+  "Random Forest": [
+   [
+    7388,
+    2612
+   ],
+   [
+    1779,
+    8221
+   ]
+  ],
+  "XGBoost": [
+   [
+    7308,
+    2692
+   ],
+   [
+    1897,
+    8103
+   ]
+  ]
+ },
+ "best_bkt2": "Random Forest",
+ "err_by_deg": [
+  {
+   "bin_deg": "≤50",
+   "Số cặp": 2674.0,
+   "Tỷ lệ dương": 0.0221,
+   "Tỷ lệ sai": 0.0767,
+   "FN/dương": 0.8305,
+   "FP/âm": 0.0597
+  },
+  {
+   "bin_deg": "51–200",
+   "Số cặp": 2901.0,
+   "Tỷ lệ dương": 0.1537,
+   "Tỷ lệ sai": 0.1696,
+   "FN/dương": 0.6928,
+   "FP/âm": 0.0745
+  },
+  {
+   "bin_deg": "201–500",
+   "Số cặp": 5018.0,
+   "Tỷ lệ dương": 0.4303,
+   "Tỷ lệ sai": 0.3284,
+   "FN/dương": 0.3409,
+   "FP/âm": 0.319
+  },
+  {
+   "bin_deg": "501–800",
+   "Số cặp": 6665.0,
+   "Tỷ lệ dương": 0.7187,
+   "Tỷ lệ sai": 0.2732,
+   "FN/dương": 0.1328,
+   "FP/âm": 0.632
+  },
+  {
+   "bin_deg": ">800",
+   "Số cặp": 2742.0,
+   "Tỷ lệ dương": 0.9285,
+   "Tỷ lệ sai": 0.0821,
+   "FN/dương": 0.0192,
+   "FP/âm": 0.898
+  }
+ ],
+ "err_by_tan": [
+  {
+   "bin_tan": "≤0,05",
+   "Số cặp": 2291.0,
+   "Tỷ lệ dương": 0.4081,
+   "Tỷ lệ sai": 0.2065,
+   "FN/dương": 0.2578,
+   "FP/âm": 0.1711
+  },
+  {
+   "bin_tan": "0,05–0,10",
+   "Số cặp": 7563.0,
+   "Tỷ lệ dương": 0.4674,
+   "Tỷ lệ sai": 0.2242,
+   "FN/dương": 0.2184,
+   "FP/âm": 0.2294
+  },
+  {
+   "bin_tan": "0,10–0,15",
+   "Số cặp": 7161.0,
+   "Tỷ lệ dương": 0.5224,
+   "Tỷ lệ sai": 0.2195,
+   "FN/dương": 0.1521,
+   "FP/âm": 0.2933
+  },
+  {
+   "bin_tan": "0,15–0,25",
+   "Số cặp": 2781.0,
+   "Tỷ lệ dương": 0.5904,
+   "Tỷ lệ sai": 0.2193,
+   "FN/dương": 0.1121,
+   "FP/âm": 0.374
+  },
+  {
+   "bin_tan": ">0,25",
+   "Số cặp": 204.0,
+   "Tỷ lệ dương": 0.7206,
+   "Tỷ lệ sai": 0.1961,
+   "FN/dương": 0.0884,
+   "FP/âm": 0.4737
+  }
+ ],
+ "best_fn": 1779,
+ "best_fp": 2612,
+ "worst_drugs": [
+  {
+   "d": "DB00482",
+   "so_cap": 30,
+   "so_sai": 12,
+   "ty_le_sai": 0.4,
+   "Tên thuốc": "Celecoxib",
+   "Bậc": 1260
+  },
+  {
+   "d": "DB08901",
+   "so_cap": 30,
+   "so_sai": 11,
+   "ty_le_sai": 0.3667,
+   "Tên thuốc": "Ponatinib",
+   "Bậc": 893
+  },
+  {
+   "d": "DB01093",
+   "so_cap": 31,
+   "so_sai": 11,
+   "ty_le_sai": 0.3548,
+   "Tên thuốc": "Dimethyl sulfoxide",
+   "Bậc": 847
+  },
+  {
+   "d": "DB01086",
+   "so_cap": 31,
+   "so_sai": 10,
+   "ty_le_sai": 0.3226,
+   "Tên thuốc": "Benzocaine",
+   "Bậc": 1062
+  },
+  {
+   "d": "DB00358",
+   "so_cap": 32,
+   "so_sai": 10,
+   "ty_le_sai": 0.3125,
+   "Tên thuốc": "Mefloquine",
+   "Bậc": 781
+  },
+  {
+   "d": "DB00263",
+   "so_cap": 32,
+   "so_sai": 10,
+   "ty_le_sai": 0.3125,
+   "Tên thuốc": "Sulfisoxazole",
+   "Bậc": 712
+  },
+  {
+   "d": "DB08981",
+   "so_cap": 42,
+   "so_sai": 13,
+   "ty_le_sai": 0.3095,
+   "Tên thuốc": "Fenbufen",
+   "Bậc": 899
+  },
+  {
+   "d": "DB01394",
+   "so_cap": 36,
+   "so_sai": 11,
+   "ty_le_sai": 0.3056,
+   "Tên thuốc": "Colchicine",
+   "Bậc": 892
+  }
+ ],
+ "corr_err_deg_drug": -0.46089431471837006,
+ "imp_groups": {
+  "A_morgan": 0.3821,
+  "A_maccs": 0.0604,
+  "B_morgan": 0.4841,
+  "B_maccs": 0.0734
+ },
+ "top_features": [
+  {
+   "Đặc trưng": "B_morgan_726",
+   "Thuốc": "B",
+   "Mô tả": "Morgan bit 726: ccc",
+   "Tỷ trọng": 0.00406
+  },
+  {
+   "Đặc trưng": "B_maccs_14",
+   "Thuốc": "B",
+   "Mô tả": "MACCS 14: [#16]-[#16]",
+   "Tỷ trọng": 0.00272
+  },
+  {
+   "Đặc trưng": "B_maccs_40",
+   "Thuốc": "B",
+   "Mô tả": "MACCS 40: [#16]-[#8]",
+   "Tỷ trọng": 0.0027
+  },
+  {
+   "Đặc trưng": "B_morgan_1002",
+   "Thuốc": "B",
+   "Mô tả": "Morgan bit 1002: [C@@][C@H](C)C",
+   "Tỷ trọng": 0.00266
+  },
+  {
+   "Đặc trưng": "B_morgan_537",
+   "Thuốc": "B",
+   "Mô tả": "Morgan bit 537: NCC(=O)[O-]",
+   "Tỷ trọng": 0.00259
+  },
+  {
+   "Đặc trưng": "A_morgan_726",
+   "Thuốc": "A",
+   "Mô tả": "Morgan bit 726: ccc",
+   "Tỷ trọng": 0.00253
+  },
+  {
+   "Đặc trưng": "A_morgan_598",
+   "Thuốc": "A",
+   "Mô tả": "Morgan bit 598: CC(C)c",
+   "Tỷ trọng": 0.00221
+  },
+  {
+   "Đặc trưng": "A_morgan_166",
+   "Thuốc": "A",
+   "Mô tả": "Morgan bit 166: CCN",
+   "Tỷ trọng": 0.00194
+  },
+  {
+   "Đặc trưng": "B_morgan_783",
+   "Thuốc": "B",
+   "Mô tả": "Morgan bit 783: CN(C)c",
+   "Tỷ trọng": 0.00194
+  },
+  {
+   "Đặc trưng": "A_morgan_238",
+   "Thuốc": "A",
+   "Mô tả": "Morgan bit 238: ccc(c(c)O)c(c)o",
+   "Tỷ trọng": 0.00189
+  },
+  {
+   "Đặc trưng": "A_morgan_742",
+   "Thuốc": "A",
+   "Mô tả": "Morgan bit 742: cc(C)n",
+   "Tỷ trọng": 0.00187
+  },
+  {
+   "Đặc trưng": "B_morgan_436",
+   "Thuốc": "B",
+   "Mô tả": "Morgan bit 436: cccc(c)C",
+   "Tỷ trọng": 0.00181
+  },
+  {
+   "Đặc trưng": "B_morgan_149",
+   "Thuốc": "B",
+   "Mô tả": "Morgan bit 149: [C@@H][C@](C)(C)O",
+   "Tỷ trọng": 0.00179
+  },
+  {
+   "Đặc trưng": "A_morgan_304",
+   "Thuốc": "A",
+   "Mô tả": "Morgan bit 304: CCCCC",
+   "Tỷ trọng": 0.00175
+  },
+  {
+   "Đặc trưng": "B_morgan_521",
+   "Thuốc": "B",
+   "Mô tả": "Morgan bit 521: [C@H]OC(C)=O",
+   "Tỷ trọng": 0.00174
+  }
+ ],
+ "imp_top15_share": 0.034208963059447976,
+ "versions": {
+  "python": "3.13.16",
+  "sklearn": "1.9.1",
+  "xgboost": "3.4.1"
+ }
+}

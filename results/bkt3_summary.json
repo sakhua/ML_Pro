@@ -1,0 +1,590 @@
+{
+ "gap_bkt2": {
+  "Logistic Regression": {
+   "ROC-AUC train": 0.83652,
+   "ROC-AUC validation": 0.80667,
+   "Chênh lệch": 0.02985
+  },
+  "Random Forest": {
+   "ROC-AUC train": 1.0,
+   "ROC-AUC validation": 0.85823,
+   "Chênh lệch": 0.14177
+  },
+  "XGBoost": {
+   "ROC-AUC train": 0.92765,
+   "ROC-AUC validation": 0.84702,
+   "Chênh lệch": 0.08063
+  }
+ },
+ "learning_curve": {
+  "XGBoost": {
+   "n": [
+    7999,
+    18666,
+    34666,
+    53333
+   ],
+   "train": [
+    0.9972473747878497,
+    0.980139002513558,
+    0.9535911030646999,
+    0.9350949421821193
+   ],
+   "val": [
+    0.7559199605492951,
+    0.8038390298453684,
+    0.8291853371934309,
+    0.8427112000884088
+   ],
+   "val_sd": [
+    0.004937156057627906,
+    0.004122323531876829,
+    0.002181252733813807,
+    0.0027869584754033204
+   ]
+  },
+  "Random Forest": {
+   "n": [
+    7999,
+    18666,
+    34666,
+    53333
+   ],
+   "train": [
+    1.0,
+    0.9999999942592175,
+    0.9999999950071524,
+    0.9999999460930761
+   ],
+   "val": [
+    0.7569348796372215,
+    0.8012821593282305,
+    0.8325009219419757,
+    0.8515037547595116
+   ],
+   "val_sd": [
+    0.0011190739348455325,
+    0.004357601600638443,
+    0.0038373032978822053,
+    0.0022171078786573073
+   ]
+  }
+ },
+ "order": {
+  "Random Forest": {
+   "mean_abs_diff": 0.11963671841630592,
+   "p90_abs_diff": 0.25,
+   "flip_rate": 0.22685,
+   "auc_ab": 0.8646465799999999,
+   "auc_ba": 0.79607726,
+   "auc_avg": 0.8606007200000001
+  },
+  "XGBoost": {
+   "mean_abs_diff": 0.13353773951530457,
+   "p90_abs_diff": 0.2864365577697754,
+   "flip_rate": 0.2177,
+   "auc_ab": 0.852521785,
+   "auc_ba": 0.77657073,
+   "auc_avg": 0.8426215899999999
+  }
+ },
+ "best_rep": {
+  "RF": {
+   "label": "ghép nối",
+   "rep": "concat",
+   "aug": false
+  },
+  "XGB": {
+   "label": "đối xứng + đếm + hóa lý",
+   "rep": "sum_plus",
+   "aug": false
+  }
+ },
+ "search": {
+  "XGB": {
+   "best_params": {
+    "colsample_bytree": 0.33485016730091965,
+    "learning_rate": 0.146962368105409,
+    "max_depth": 10,
+    "min_child_weight": 5,
+    "n_estimators": 608,
+    "reg_lambda": 9.138013915892865,
+    "subsample": 0.9329770563201687
+   },
+   "best_score": 0.8331321000000002,
+   "best_std": 0.003322717008995308,
+   "default_score": 0.82123144,
+   "n_iter": 10,
+   "time_s": 527.2770221233368,
+   "rep": "sum_plus",
+   "aug": false,
+   "trials": [
+    {
+     "params": "{'colsample_bytree': 0.33485016730091965, 'learning_rate': 0.146962368105409, 'max_depth': 10, 'min_child_weight': 5, 'n_estimators': 608, 'reg_lambda': 9.138013915892865, 'subsample': 0.9329770563201687}",
+     "mean": 0.83313,
+     "std": 0.00332,
+     "time": 61.35831
+    },
+    {
+     "params": "{'colsample_bytree': 0.31383745502484944, 'learning_rate': 0.06695833655111026, 'max_depth': 8, 'min_child_weight': 3, 'n_estimators': 775, 'reg_lambda': 9.243897959491427, 'subsample': 0.6931085361721216}",
+     "mean": 0.83016,
+     "std": 0.00293,
+     "time": 70.52011
+    },
+    {
+     "params": "{'colsample_bytree': 0.31878797547333515, 'learning_rate': 0.13909604136253803, 'max_depth': 10, 'min_child_weight': 3, 'n_estimators': 501, 'reg_lambda': 7.297384471483422, 'subsample': 0.8391599915244341}",
+     "mean": 0.82955,
+     "std": 0.005,
+     "time": 53.26141
+    },
+    {
+     "params": "{'colsample_bytree': 0.35436386071969245, 'learning_rate': 0.08306460515328777, 'max_depth': 10, 'min_child_weight': 5, 'n_estimators': 543, 'reg_lambda': 2.949301205216348, 'subsample': 0.6185801650879991}",
+     "mean": 0.82638,
+     "std": 0.00303,
+     "time": 54.93947
+    },
+    {
+     "params": "{'colsample_bytree': 0.40401879210466324, 'learning_rate': 0.04921421964961083, 'max_depth': 6, 'min_child_weight': 3, 'n_estimators': 689, 'reg_lambda': 0.9321983825917718, 'subsample': 0.8270801311279966}",
+     "mean": 0.82144,
+     "std": 0.00495,
+     "time": 44.69262
+    },
+    {
+     "params": "{'colsample_bytree': 0.5247240713084175, 'learning_rate': 0.1785436060870726, 'max_depth': 8, 'min_child_weight': 1, 'n_estimators': 320, 'reg_lambda': 0.7979118876474873, 'subsample': 0.662397808134481}",
+     "mean": 0.82024,
+     "std": 0.00314,
+     "time": 30.70811
+    },
+    {
+     "params": "{'colsample_bytree': 0.6645269111408629, 'learning_rate': 0.029617890239950373, 'max_depth': 8, 'min_child_weight': 3, 'n_estimators': 687, 'reg_lambda': 8.410130803088963, 'subsample': 0.8253152871382157}",
+     "mean": 0.81894,
+     "std": 0.00379,
+     "time": 61.43708
+    },
+    {
+     "params": "{'colsample_bytree': 0.8531245410138701, 'learning_rate': 0.024520114718375053, 'max_depth': 8, 'min_child_weight': 1, 'n_estimators': 595, 'reg_lambda': 6.2767361625118845, 'subsample': 0.8989280440549523}",
+     "mean": 0.81313,
+     "std": 0.00493,
+     "time": 55.88657
+    },
+    {
+     "params": "{'colsample_bytree': 0.5312499015239496, 'learning_rate': 0.020748955911802373, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 754, 'reg_lambda': 3.108808375984232, 'subsample': 0.9332779646944658}",
+     "mean": 0.79487,
+     "std": 0.00567,
+     "time": 50.67765
+    },
+    {
+     "params": "{'colsample_bytree': 0.4274034664069657, 'learning_rate': 0.030398696602619613, 'max_depth': 4, 'min_child_weight': 1, 'n_estimators': 759, 'reg_lambda': 3.124273988559544, 'subsample': 0.6028265220878869}",
+     "mean": 0.78044,
+     "std": 0.00498,
+     "time": 43.79568
+    }
+   ]
+  },
+  "RF": {
+   "best_params": {
+    "n_estimators": 500,
+    "min_samples_leaf": 1,
+    "max_features": 0.1,
+    "max_depth": null
+   },
+   "best_score": 0.8088682,
+   "best_std": 0.0023793557054519136,
+   "default_score": 0.80532342,
+   "n_iter": 6,
+   "time_s": 1221.3828284740448,
+   "rep": "concat",
+   "aug": false,
+   "trials": [
+    {
+     "params": "{'n_estimators': 500, 'min_samples_leaf': 1, 'max_features': 0.1, 'max_depth': None}",
+     "mean": 0.80887,
+     "std": 0.00238,
+     "time": 307.55874
+    },
+    {
+     "params": "{'n_estimators': 500, 'min_samples_leaf': 1, 'max_features': 0.1, 'max_depth': 40}",
+     "mean": 0.80679,
+     "std": 0.00259,
+     "time": 279.11532
+    },
+    {
+     "params": "{'n_estimators': 300, 'min_samples_leaf': 1, 'max_features': 0.1, 'max_depth': 40}",
+     "mean": 0.80531,
+     "std": 0.00236,
+     "time": 168.49612
+    },
+    {
+     "params": "{'n_estimators': 300, 'min_samples_leaf': 2, 'max_features': 0.05, 'max_depth': 40}",
+     "mean": 0.80352,
+     "std": 0.00268,
+     "time": 84.40826
+    },
+    {
+     "params": "{'n_estimators': 500, 'min_samples_leaf': 4, 'max_features': 0.1, 'max_depth': 40}",
+     "mean": 0.7989,
+     "std": 0.00322,
+     "time": 244.84241
+    },
+    {
+     "params": "{'n_estimators': 300, 'min_samples_leaf': 4, 'max_features': 0.1, 'max_depth': None}",
+     "mean": 0.798,
+     "std": 0.00381,
+     "time": 136.96198
+    }
+   ]
+  }
+ },
+ "val_curve": {
+  "depth": [
+   2,
+   4,
+   6,
+   8,
+   10
+  ],
+  "train": [
+   0.8264757983333334,
+   0.9401650666666667,
+   0.9909566616666666,
+   0.9997054016666667,
+   0.999996545
+  ],
+  "val": [
+   0.7669397333333334,
+   0.8126848066666666,
+   0.8265604399999998,
+   0.8306746199999999,
+   0.8331321000000002
+  ],
+  "val_sd": [
+   0.0061334356665158395,
+   0.003097976785853758,
+   0.0013847032445497838,
+   0.002443616590274873,
+   0.003322717008995308
+  ]
+ },
+ "ablation": [
+  {
+   "Cấu hình": "LR · ghép nối (ban đầu)",
+   "ROC-AUC": 0.806669,
+   "ĐLC ROC-AUC": 0.002614,
+   "F1": 0.738603,
+   "ĐLC F1": 0.002489,
+   "Recall": 0.7562,
+   "Precision": 0.721809,
+   "Accuracy": 0.732375,
+   "ROC-AUC train": 0.836515,
+   "Thời gian fit (s/fold)": 22.862795
+  },
+  {
+   "Cấu hình": "RF · ghép nối (ban đầu)",
+   "ROC-AUC": 0.858231,
+   "ĐLC ROC-AUC": 0.002243,
+   "F1": 0.783432,
+   "ĐLC F1": 0.002818,
+   "Recall": 0.809075,
+   "Precision": 0.759377,
+   "Accuracy": 0.77635,
+   "ROC-AUC train": 1.0,
+   "Thời gian fit (s/fold)": 75.627636
+  },
+  {
+   "Cấu hình": "XGB · ghép nối (ban đầu)",
+   "ROC-AUC": 0.847024,
+   "ĐLC ROC-AUC": 0.001731,
+   "F1": 0.772554,
+   "ĐLC F1": 0.001494,
+   "Recall": 0.799325,
+   "Precision": 0.747527,
+   "Accuracy": 0.764675,
+   "ROC-AUC train": 0.92765,
+   "Thời gian fit (s/fold)": 45.426327
+  },
+  {
+   "Cấu hình": "LR · ghép nối + dự đoán hai chiều",
+   "ROC-AUC": 0.783839,
+   "ĐLC ROC-AUC": 0.003112,
+   "F1": 0.715384,
+   "ĐLC F1": 0.004007,
+   "Recall": 0.73475,
+   "Precision": 0.69703,
+   "Accuracy": 0.707688,
+   "ROC-AUC train": 0.800188,
+   "Thời gian fit (s/fold)": 22.298983
+  },
+  {
+   "Cấu hình": "RF · ghép nối + dự đoán hai chiều",
+   "ROC-AUC": 0.854315,
+   "ĐLC ROC-AUC": 0.002453,
+   "F1": 0.777989,
+   "ĐLC F1": 0.001481,
+   "Recall": 0.801175,
+   "Precision": 0.75613,
+   "Accuracy": 0.771375,
+   "ROC-AUC train": 0.999356,
+   "Thời gian fit (s/fold)": 74.786737
+  },
+  {
+   "Cấu hình": "XGB · ghép nối + dự đoán hai chiều",
+   "ROC-AUC": 0.838441,
+   "ĐLC ROC-AUC": 0.003153,
+   "F1": 0.764535,
+   "ĐLC F1": 0.003692,
+   "Recall": 0.787075,
+   "Precision": 0.743288,
+   "Accuracy": 0.7576,
+   "ROC-AUC train": 0.887897,
+   "Thời gian fit (s/fold)": 46.660414
+  },
+  {
+   "Cấu hình": "LR · đối xứng",
+   "ROC-AUC": 0.792953,
+   "ĐLC ROC-AUC": 0.002674,
+   "F1": 0.727542,
+   "ĐLC F1": 0.002989,
+   "Recall": 0.7445,
+   "Precision": 0.711364,
+   "Accuracy": 0.7212,
+   "ROC-AUC train": 0.809444,
+   "Thời gian fit (s/fold)": 8.396189
+  },
+  {
+   "Cấu hình": "RF · đối xứng",
+   "ROC-AUC": 0.850745,
+   "ĐLC ROC-AUC": 0.00288,
+   "F1": 0.776442,
+   "ĐLC F1": 0.002892,
+   "Recall": 0.80185,
+   "Precision": 0.752625,
+   "Accuracy": 0.769138,
+   "ROC-AUC train": 1.0,
+   "Thời gian fit (s/fold)": 47.714589
+  },
+  {
+   "Cấu hình": "XGB · đối xứng",
+   "ROC-AUC": 0.853363,
+   "ĐLC ROC-AUC": 0.00272,
+   "F1": 0.7758,
+   "ĐLC F1": 0.003303,
+   "Recall": 0.795475,
+   "Precision": 0.757088,
+   "Accuracy": 0.770125,
+   "ROC-AUC train": 0.939274,
+   "Thời gian fit (s/fold)": 24.06566
+  },
+  {
+   "Cấu hình": "LR · đối xứng + đếm + hóa lý",
+   "ROC-AUC": 0.803301,
+   "ĐLC ROC-AUC": 0.002273,
+   "F1": 0.73467,
+   "ĐLC F1": 0.002488,
+   "Recall": 0.75205,
+   "Precision": 0.718099,
+   "Accuracy": 0.7284,
+   "ROC-AUC train": 0.819072,
+   "Thời gian fit (s/fold)": 12.213335
+  },
+  {
+   "Cấu hình": "RF · đối xứng + đếm + hóa lý",
+   "ROC-AUC": 0.845483,
+   "ĐLC ROC-AUC": 0.003294,
+   "F1": 0.771479,
+   "ĐLC F1": 0.004289,
+   "Recall": 0.7962,
+   "Precision": 0.748278,
+   "Accuracy": 0.764175,
+   "ROC-AUC train": 1.0,
+   "Thời gian fit (s/fold)": 56.517693
+  },
+  {
+   "Cấu hình": "XGB · đối xứng + đếm + hóa lý",
+   "ROC-AUC": 0.853672,
+   "ĐLC ROC-AUC": 0.001576,
+   "F1": 0.778929,
+   "ĐLC F1": 0.002181,
+   "Recall": 0.80345,
+   "Precision": 0.755877,
+   "Accuracy": 0.771975,
+   "ROC-AUC train": 0.934604,
+   "Thời gian fit (s/fold)": 33.24916
+  },
+  {
+   "Cấu hình": "XGB · đối xứng + đếm + hóa lý · tối ưu",
+   "ROC-AUC": 0.88119,
+   "ĐLC ROC-AUC": 0.001394,
+   "F1": 0.804639,
+   "ĐLC F1": 0.002195,
+   "Recall": 0.824,
+   "Precision": 0.786203,
+   "Accuracy": 0.79995,
+   "ROC-AUC train": 0.997821,
+   "Thời gian fit (s/fold)": 59.16368
+  },
+  {
+   "Cấu hình": "RF · ghép nối · tối ưu",
+   "ROC-AUC": 0.859029,
+   "ĐLC ROC-AUC": 0.002299,
+   "F1": 0.785798,
+   "ĐLC F1": 0.002933,
+   "Recall": 0.815375,
+   "Precision": 0.758301,
+   "Accuracy": 0.777738,
+   "ROC-AUC train": 1.0,
+   "Thời gian fit (s/fold)": 477.39385
+  },
+  {
+   "Cấu hình": "Extra Trees · ghép nối",
+   "ROC-AUC": 0.863464,
+   "ĐLC ROC-AUC": 0.002383,
+   "F1": 0.789507,
+   "ĐLC F1": 0.001895,
+   "Recall": 0.81715,
+   "Precision": 0.76369,
+   "Accuracy": 0.782137,
+   "ROC-AUC train": 1.0,
+   "Thời gian fit (s/fold)": 137.136357
+  },
+  {
+   "Cấu hình": "Voting RF + XGB · tối ưu",
+   "ROC-AUC": 0.885494,
+   "ĐLC ROC-AUC": 0.001618,
+   "F1": 0.809952,
+   "ĐLC F1": 0.001139,
+   "Recall": 0.832825,
+   "Precision": 0.78833,
+   "Accuracy": 0.804588,
+   "ROC-AUC train": NaN,
+   "Thời gian fit (s/fold)": 536.55753
+  }
+ ],
+ "final_name": "Voting RF + XGB · tối ưu",
+ "test": {
+  "XGB · ghép nối (ban đầu)": {
+   "roc_auc": 0.852522,
+   "f1": 0.779322,
+   "recall": 0.8103,
+   "precision": 0.750625,
+   "accuracy": 0.77055,
+   "ROC-AUC kiểm định chéo": 0.847024
+  },
+  "RF · ghép nối (ban đầu)": {
+   "roc_auc": 0.864647,
+   "f1": 0.789229,
+   "recall": 0.8221,
+   "precision": 0.758885,
+   "accuracy": 0.78045,
+   "ROC-AUC kiểm định chéo": 0.858231
+  },
+  "XGB · đối xứng + đếm + hóa lý · tối ưu": {
+   "roc_auc": 0.886844,
+   "f1": 0.810422,
+   "recall": 0.8336,
+   "precision": 0.788498,
+   "accuracy": 0.805,
+   "ROC-AUC kiểm định chéo": 0.88119
+  },
+  "RF · ghép nối · tối ưu": {
+   "roc_auc": 0.864682,
+   "f1": 0.790814,
+   "recall": 0.823,
+   "precision": 0.76105,
+   "accuracy": 0.7823,
+   "ROC-AUC kiểm định chéo": 0.859029
+  },
+  "Voting RF + XGB · tối ưu": {
+   "roc_auc": 0.890767,
+   "f1": 0.815533,
+   "recall": 0.8411,
+   "precision": 0.791475,
+   "accuracy": 0.80975,
+   "ROC-AUC kiểm định chéo": 0.885494
+  }
+ },
+ "final_folds": [
+  {
+   "Fold": 1,
+   "roc_auc": 0.88684,
+   "f1": 0.81151,
+   "recall": 0.83362,
+   "precision": 0.79054,
+   "accuracy": 0.80638
+  },
+  {
+   "Fold": 2,
+   "roc_auc": 0.88759,
+   "f1": 0.81075,
+   "recall": 0.83562,
+   "precision": 0.7873,
+   "accuracy": 0.80494
+  },
+  {
+   "Fold": 3,
+   "roc_auc": 0.88356,
+   "f1": 0.8083,
+   "recall": 0.82488,
+   "precision": 0.79239,
+   "accuracy": 0.80438
+  },
+  {
+   "Fold": 4,
+   "roc_auc": 0.88374,
+   "f1": 0.80912,
+   "recall": 0.83662,
+   "precision": 0.78336,
+   "accuracy": 0.80262
+  },
+  {
+   "Fold": 5,
+   "roc_auc": 0.88574,
+   "f1": 0.81009,
+   "recall": 0.83338,
+   "precision": 0.78806,
+   "accuracy": 0.80462
+  }
+ ],
+ "cold": {
+  "XGBoost ban đầu": {
+   "S1_one_new": 0.77362,
+   "S2_two_new": 0.680111
+  },
+  "Random Forest ban đầu": {
+   "S1_one_new": 0.799017,
+   "S2_two_new": 0.720373
+  },
+  "XGB · đối xứng + đếm + hóa lý · tối ưu": {
+   "S1_one_new": 0.802658,
+   "S2_two_new": 0.708572
+  },
+  "RF · ghép nối · tối ưu": {
+   "S1_one_new": 0.796196,
+   "S2_two_new": 0.715973
+  }
+ },
+ "degree_diag": {
+  "Mẫu âm ban đầu": {
+   "Chỉ dùng bậc": 0.8705101347231979,
+   "Chỉ dùng bậc ĐLC": 0.0023101845298104805,
+   "XGB cấu trúc": 0.8482459380574047,
+   "XGB cấu trúc ĐLC": 0.0023671382444451555
+  },
+  "Mẫu âm cân bằng theo bậc": {
+   "Chỉ dùng bậc": 0.6798068095390392,
+   "Chỉ dùng bậc ĐLC": 0.0021521140199191094,
+   "XGB cấu trúc": 0.7153976588656646,
+   "XGB cấu trúc ĐLC": 0.001436615984905785
+  }
+ },
+ "names": {
+  "XGB": "XGB · đối xứng + đếm + hóa lý · tối ưu",
+  "RF": "RF · ghép nối · tối ưu",
+  "ET": "Extra Trees · ghép nối",
+  "VOTE": "Voting RF + XGB · tối ưu"
+ },
+ "versions": {
+  "python": "3.13.16",
+  "sklearn": "1.9.1",
+  "xgboost": "3.4.1"
+ }
+}

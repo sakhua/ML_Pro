@@ -1,0 +1,29 @@
+# ---- Báo cáo của số nhóm cũ (trước khi đổi sang Nhóm 19) ----
+BaoCao_Nhom_05.pdf
+LaTeX/BaoCao_Nhom_05.*
+
+# ---- File sinh ra khi biên dịch LaTeX ----
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.xdv
+*.synctex.gz
+missfont.log
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ---- Bộ nhớ đệm của notebook (sinh lại được, ~8 MB) ----
+results/cache/
+
+# ---- Khác ----
+Link_GitHub.txt
+Thumbs.db
+.DS_Store
